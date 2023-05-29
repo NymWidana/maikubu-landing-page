@@ -55,11 +55,11 @@ const produk = [
   <!-- banner -->
   <div class="relative banner -z-10 w-full">
     <div
-      class="absolute top-0 left-0 h-full flex items-center w-full textbanner pl-12"
+      class="absolute top-0 left-0 h-full flex items-center w-full textbanner mdpl-12 pl-8 "
     >
-      <div class="w-1/3">
-        <h1 class="text-5xl font-black my-4">MaiKubu Tigawasa</h1>
-        <p class="text-3xl font-bold">Love nature with bamboo</p>
+      <div class="md:w-1/3 w-1/2">
+        <h1 class="md:text-5xl text-4xl font-black my-4">MaiKubu Tigawasa</h1>
+        <p class="md:text-3xl text-2xl font-bold">Love nature with bamboo</p>
       </div>
     </div>
     <!-- <img
@@ -72,7 +72,7 @@ const produk = [
   <!-- konten -->
   <div class="bg-white">
     <!-- penjelasan singkat -->
-    <div class="text-lg text-center sum py-8 px-8">
+    <div class=" lg:text-lg text-base text-center sum py-8 px-8">
       <p>
         Kami lahir sebagai upaya pelestarian adat dan budaya Desa Tigawasa yang
         sangat erat kaitannya dengan nilai konservasi. Kami ingin menciptakan
@@ -85,15 +85,15 @@ const produk = [
     <div class="layoutcenter px-4" id="tentang">
       <!-- tentang kami -->
       <div class="mb-8">
-        <h2 class="text-center text-3xl font-black py-8">Tentang Kami</h2>
+        <h2 class="text-center sm:text-3xl text-2xl font-black py-8">Tentang Kami</h2>
         <div class="grid sm:grid-cols-2 grid-cols-1">
           <h3
-            class="flex items-center text-3xl font-black px-4 py-8 underline sm:bg-white bg-gray-100"
+            class="flex items-center sm:text-3xl text-2xl font-black px-4 py-8 underline sm:bg-white bg-gray-100"
           >
             MaiKubu Tigawasa
           </h3>
           <div
-            class="bg-color1 text-white px-4 py-4 pb-8 sm:h-96 h-auto flex items-center"
+            class="lg:text-base text-sm bg-color1 text-white px-4 py-4 pb-8 sm:h-96 h-auto flex items-center"
           >
             <p>
               <b class="font-black">MaiKubu</b> terdiri dari dua kata "Mai" dan "Kubu". Dua kata
@@ -105,14 +105,14 @@ const produk = [
         </div>
         <div class="flex flex-wrap">
           <div
-            class="sm:w-1/2 w-full bg-color3 text-white px-4 py-4 pb-8 sm:h-96 h-auto flex items-center"
+            class="lg:text-base text-sm sm:w-1/2 w-full bg-color3 text-white px-4 py-4 pb-8 sm:h-96 h-auto flex items-center"
           >
             Tigawasa kami ambil dari nama desa tempat kami lahir, yakni Desa
             Tigawasa. Sebuah desa tua di Bali Utara yang kaya akan nilai hidup
             selaras alam dari adat dan budaya yang dijalankan.
           </div>
           <h3
-            class="sm:order-1 -order-1 sm:w-1/2 w-full flex items-center text-3xl font-black px-4 py-8 underline sm:bg-white bg-gray-100"
+            class="sm:order-1 -order-1 sm:w-1/2 w-full flex items-center sm:text-3xl text-2xl font-black px-4 py-8 underline sm:bg-white bg-gray-100"
           >
             MaiKubu-Ayo ke Rumah / Ayo Pulang
           </h3>
@@ -121,12 +121,12 @@ const produk = [
 
       <!-- workshop maikubu -->
       <div class="my-8" id="workshop">
-        <h2 class="text-center text-3xl font-black py-8">Workshop Kami</h2>
+        <h2 class="text-center sm:text-3xl text-2xl font-black py-8">Workshop Kami</h2>
         <div class="grid md:grid-cols-2 grid-cols-1 mb-12">
           <img class="rounded-lg m-auto" src="../assets/kegiatan1.png" alt="" />
           <div class="p-4">
-            <h3 class="text-3xl font-black underline">Kegiatan 1</h3>
-            <p class="my-4">
+            <h3 class="sm:text-3xl text-2xl font-black underline">Kegiatan 1</h3>
+            <p class="my-4 lg:text-base text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
               fuga, ut voluptatem placeat excepturi ipsam fugit. Officiis quo
               quasi consequuntur optio, corrupti iste odio beatae recusandae
@@ -140,8 +140,8 @@ const produk = [
         <div class="">
           <img class="rounded-lg" src="../assets/kegiatan2.png" alt="" />
           <div class="p-4">
-            <h3 class="text-3xl font-black underline">Kegiatan 2</h3>
-            <p class="my-4">
+            <h3 class="sm:text-3xl text-2xl font-black underline">Kegiatan 2</h3>
+            <p class="my-4 lg:text-base text-sm">
               Kami lahir sebagai upaya pelestarian adat dan budaya Desa Tigawasa
               yang sangat erat kaitannya dengan nilai konservasi. Kami ingin
               menciptakan ekonomi yang berdaya dan berkeadilan dari kegiatan
@@ -153,8 +153,8 @@ const produk = [
       </div>
     </div>
     <!-- pembatas topik -->
-    <div class="bg-color1 text-white text-center mb-8 px-8">
-      <p class="pembatastopik py-12">
+    <div class="bg-color1 text-white text-center mb-8 px-4">
+      <p class="pembatastopik py-12 lg:text-base text-sm">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eligendi
         nihil! Dignissimos nihil repudiandae temporibus sunt asperiores
         blanditiis ducimus architecto accusantium eius beatae! Ut similique
@@ -165,8 +165,8 @@ const produk = [
 
     <div class="layoutcenter bg-white">
       <!-- katalog produk -->
-      <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 mb-8">
-        <div class="m-8 relative" v-for="p in produk">
+      <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 md:m-8 sm:m-4 m-2 md:mb-8 sm:mb-4 mb-2">
+        <div class="md:m-8 sm:m-4 m-2 relative" v-for="p in produk">
           <div>
             <img
               class="w-full rounded-md hover:shadow-xl"
@@ -191,16 +191,12 @@ const produk = [
 
     <!-- kalimat penutup -->
     <div class="penutup pb-16 text-center px-8 bg-white">
-      <p class="text-center mb-12">
+      <p class="text-center mb-12 lg:text-base text-sm">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime et
         ullam labore velit itaque laudantium odio voluptatem repudiandae error
         ipsam beatae maiores reprehenderit impedit vel consectetur quaerat
         quibusdam expedita mollitia ea veniam, alias, perferendis neque
-        obcaecati! Fugiat ad, assumenda incidunt laboriosam ab animi aperiam,
-        officiis illum quos quo saepe! Exercitationem nobis ad dicta, beatae
-        minus blanditiis porro reprehenderit quo iusto facilis, soluta minima
-        quia earum et eveniet tempore. Nesciunt ex quia cupiditate est provident
-        harum recusandae perferendis quas? Unde, necessitatibus?
+        obcaecati! Fugiat ad, assumenda incidunt laboriosam ab animi
       </p>
 
       <!-- tombol hubungi kami -->

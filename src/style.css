@@ -114,8 +114,8 @@ button:focus-visible {
   font-family: "Playfair Display";
 }
 .banner {
-  height: 560px;
-  background: linear-gradient(to right, white, transparent 80%),
+  height: 480px;
+  background: linear-gradient(to right, white, transparent),
     url(./assets/banner.jpeg) no-repeat center / cover;
 }
 .sum,
@@ -150,5 +150,6 @@ button:focus-visible {
   .banner {
     background: linear-gradient(to right, white, transparent 50%),
       url(./assets/banner.jpeg) no-repeat center / cover;
+height: 560px;
   }
 }
