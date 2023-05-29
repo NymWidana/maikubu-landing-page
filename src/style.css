@@ -76,18 +76,14 @@ button:focus-visible {
 } */
 .body2 {
   scroll-behavior: smooth;
-  perspective: 10px;
-  height: 100vh;
-  overflow-y: auto;
   overflow-x: hidden;
 }
-.gambarbanner {
-  transform: translateZ(-10px) scale(2.2);
+/* .gambarbanner {
   object-fit: cover;
-}
+  position: fixed;
+} */
 .textbanner {
-  transform: translateZ(-5px) scale(1.7) translateX(5%);
-  background: linear-gradient(to right, white, transparent 50%);
+  /* background: linear-gradient(to right, white, transparent 50%); */
 }
 .bg-color1 {
   background-color: #41593f;
@@ -118,9 +114,8 @@ button:focus-visible {
 }
 .banner {
   height: 560px;
-  transform-style: preserve-3d;
-  /* background: linear-gradient(to right, white, transparent 50%),
-    url(./assets/banner.jpeg) no-repeat center / cover; */
+  background: linear-gradient(to right, white, transparent 50%),
+    url(./assets/banner.jpeg) no-repeat center / cover;
 }
 .sum,
 .pembatastopik,

@@ -1,7 +1,6 @@
-import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import About from "./../components/About.vue"
-import Homepage from "./../App.vue";
+import Homepage from '../components/Layout.vue'
+import About from '../components/About.vue'
 
 const routes = [
   {
@@ -16,7 +15,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
 });
 
-export default router
+export default router;
