@@ -12,6 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 /* a {
@@ -114,7 +115,7 @@ button:focus-visible {
 }
 .banner {
   height: 560px;
-  background: linear-gradient(to right, white, transparent 50%),
+  background: linear-gradient(to right, white, transparent 80%),
     url(./assets/banner.jpeg) no-repeat center / cover;
 }
 .sum,
@@ -123,7 +124,7 @@ button:focus-visible {
   max-width: 40em;
   margin: auto;
 }
-.tentangkami,
+.layoutcenter,
 .topik2 {
   max-width: 56em;
   margin: auto;
@@ -144,3 +145,10 @@ button:focus-visible {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (min-width: 768px) {
+  .banner {
+    background: linear-gradient(to right, white, transparent 50%),
+      url(./assets/banner.jpeg) no-repeat center / cover;
+  }
+}

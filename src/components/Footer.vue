@@ -1,14 +1,14 @@
 <template>
         <!-- footer -->
-    <div class="grid grid-cols-2 bg-color4 text-white p-8">
-      <div class="text-center w-28 ml-auto mr-36">
-        <a class="block" href="#" id="logo"
+    <div class="grid sm:grid-cols-2 grid-cols-3 bg-color4 text-white sm:p-8 p-4">
+      <div class="text-center sm:w-28 w-24 ml-auto sm:mr-36 mr-0">
+        <router-link class="block" to="/" id="logo"
           ><img
             class="w-3/4 mx-auto mb-4"
             src="../assets/logomaikubu.png"
             alt=""
-        /></a>
-        <p class="my-2 text-sm">Connect with Us</p>
+        /></router-link>
+        <p class="my-2 text-xs">Connect with Us</p>
         <div class="flex justify-around gap-4">
           <a href="#"
             ><img class="w-4 invert" src="../assets/instagram.png" alt=""
@@ -21,7 +21,7 @@
           /></a>
         </div>
       </div>
-      <div class="flex gap-4 text-sm">
+      <div class="flex sm:justify-normal justify-center gap-2 md:text-sm text-sm sm:col-span-1 col-span-2">
         <span
           ><a
             href="#tentang"

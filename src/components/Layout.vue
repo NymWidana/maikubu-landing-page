@@ -36,7 +36,8 @@ const produk = [
     url: new URL("/src/assets/produk6.png", import.meta.url).href,
     deskripsiSingkat:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam",
-  },  {
+  },
+  {
     nama: "produk7",
     url: new URL("/src/assets/produk7.jpeg", import.meta.url).href,
     deskripsiSingkat:
@@ -48,12 +49,11 @@ const produk = [
     deskripsiSingkat:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam",
   },
-
 ];
 </script>
 <template>
   <!-- banner -->
-  <div class="relative banner -z-10 w-screen">
+  <div class="relative banner -z-10 w-full">
     <div
       class="absolute top-0 left-0 h-full flex items-center w-full textbanner pl-12"
     >
@@ -72,7 +72,7 @@ const produk = [
   <!-- konten -->
   <div class="bg-white">
     <!-- penjelasan singkat -->
-    <div class="text-lg text-center sum py-8 px-4">
+    <div class="text-lg text-center sum py-8 px-8">
       <p>
         Kami lahir sebagai upaya pelestarian adat dan budaya Desa Tigawasa yang
         sangat erat kaitannya dengan nilai konservasi. Kami ingin menciptakan
@@ -82,37 +82,48 @@ const produk = [
     </div>
 
     <!-- tentang -->
-    <div class="tentangkami px-4" id="tentang">
+    <div class="layoutcenter px-4" id="tentang">
+      <!-- tentang kami -->
       <div class="mb-8">
         <h2 class="text-center text-3xl font-black py-8">Tentang Kami</h2>
-        <div class="grid grid-cols-2">
-          <h3 class="flex items-center text-3xl font-black px-4 py-8 underline">
+        <div class="grid sm:grid-cols-2 grid-cols-1">
+          <h3
+            class="flex items-center text-3xl font-black px-4 py-8 underline sm:bg-white bg-gray-100"
+          >
             MaiKubu Tigawasa
           </h3>
-          <div class="bg-color1 text-white px-4 h-96 flex items-center">
-            MaiKubu terdiri dari dua kata "Mai" dan "Kubu". Dua kata ini kami
-            ambil dari kalimat yang sering kami utarakan ketika ingin mengajak
-            teman untuk pulang. Melalui nama ini kami ingin berpesan untuk
-            selalu ingat kepada tanah kelahiran.
+          <div
+            class="bg-color1 text-white px-4 py-4 pb-8 sm:h-96 h-auto flex items-center"
+          >
+            <p>
+              <b class="font-black">MaiKubu</b> terdiri dari dua kata "Mai" dan "Kubu". Dua kata
+              ini kami ambil dari kalimat yang sering kami utarakan ketika ingin
+              mengajak teman untuk pulang. Melalui nama ini kami ingin berpesan
+              untuk selalu ingat kepada tanah kelahiran.
+            </p>
           </div>
         </div>
-        <div class="grid grid-cols-2">
-          <div class="bg-color3 text-white px-4 h-96 flex items-center">
+        <div class="flex flex-wrap">
+          <div
+            class="sm:w-1/2 w-full bg-color3 text-white px-4 py-4 pb-8 sm:h-96 h-auto flex items-center"
+          >
             Tigawasa kami ambil dari nama desa tempat kami lahir, yakni Desa
             Tigawasa. Sebuah desa tua di Bali Utara yang kaya akan nilai hidup
             selaras alam dari adat dan budaya yang dijalankan.
           </div>
-          <h3 class="flex items-center text-3xl font-black px-4 py-8 underline">
+          <h3
+            class="sm:order-1 -order-1 sm:w-1/2 w-full flex items-center text-3xl font-black px-4 py-8 underline sm:bg-white bg-gray-100"
+          >
             MaiKubu-Ayo ke Rumah / Ayo Pulang
           </h3>
         </div>
       </div>
 
-      <!-- kegiatan maikubu -->
+      <!-- workshop maikubu -->
       <div class="my-8" id="workshop">
         <h2 class="text-center text-3xl font-black py-8">Workshop Kami</h2>
         <div class="grid md:grid-cols-2 grid-cols-1 mb-12">
-          <img class="rounded-lg" src="../assets/kegiatan1.png" alt="" />
+          <img class="rounded-lg m-auto" src="../assets/kegiatan1.png" alt="" />
           <div class="p-4">
             <h3 class="text-3xl font-black underline">Kegiatan 1</h3>
             <p class="my-4">
@@ -142,7 +153,7 @@ const produk = [
       </div>
     </div>
     <!-- pembatas topik -->
-    <div class="bg-color1 text-white text-center mb-8">
+    <div class="bg-color1 text-white text-center mb-8 px-8">
       <p class="pembatastopik py-12">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eligendi
         nihil! Dignissimos nihil repudiandae temporibus sunt asperiores
@@ -152,12 +163,12 @@ const produk = [
       </p>
     </div>
 
-    <div class="topik2 bg-white">
+    <div class="layoutcenter bg-white">
       <!-- katalog produk -->
       <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 mb-8">
         <div class="m-8 relative" v-for="p in produk">
-          <a href="#"
-            ><img
+          <div>
+            <img
               class="w-full rounded-md hover:shadow-xl"
               :src="p.url"
               alt=""
@@ -172,8 +183,8 @@ const produk = [
                   {{ p.deskripsiSingkat }}
                 </div>
               </div>
-            </div></a
-          >
+            </div>
+          </div>
         </div>
       </div>
     </div>

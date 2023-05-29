@@ -1,6 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Homepage from '../components/Layout.vue'
-import About from '../components/About.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import Homepage from "../components/Layout.vue";
+import About from "../components/About.vue";
+import Workshop from "../components/Workshop.vue";
+import Contact from "../components/Contact.vue"
 
 const routes = [
   {
@@ -10,6 +12,14 @@ const routes = [
   {
     path: "/about",
     component: About,
+  },
+  {
+    path: "/workshop",
+    component: Workshop,
+  },
+  {
+    path: "/contact",
+    component: Contact,
   },
 ];
 
