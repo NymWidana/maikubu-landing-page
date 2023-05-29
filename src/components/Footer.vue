@@ -2,12 +2,12 @@
         <!-- footer -->
     <div class="grid sm:grid-cols-2 grid-cols-3 bg-color4 text-white sm:p-8 p-4">
       <div class="text-center sm:w-28 w-24 ml-auto sm:mr-36 mr-0">
-        <router-link class="block" to="/" id="logo"
+        <a class="block" href="#header" id="logo"
           ><img
             class="w-3/4 mx-auto mb-4"
             src="../assets/logomaikubu.png"
             alt=""
-        /></router-link>
+        /></a>
         <p class="my-2 text-xs">Connect with Us</p>
         <div class="flex justify-around gap-4">
           <a href="#"

@@ -1,6 +1,6 @@
 <template>
   <!-- header -->
-  <div class="h-14 shadow-md sm:px-16 px-4 py-2 bg-white flex items-center">
+  <div id="header" class="h-14 shadow-md sm:px-16 px-4 py-2 bg-white flex items-center">
     <router-link class="h-full" to="/" id="logo"
       ><img class="invert h-full" src="../assets/logomaikubu.png" alt=""
     /></router-link>
